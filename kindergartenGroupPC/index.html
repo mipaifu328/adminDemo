@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>幼儿园</title>
+		
+		<!-- Bootstrap Core CSS -->
+	    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- 图标样式 -->
+	    <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    <!-- Custom CSS -->
+	    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    	<link href="css/index.css" rel="stylesheet">
+	    
+		<!-- jQuery -->
+	    <script src="plugins/jquery/jquery-1.11.1.min.js"></script>
+	    <!-- Bootstrap Core JavaScript -->
+	    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+	    
+		<script src="js/index.js"></script>
+		
+		<!-- ie低版本不显示placeholder -->
+		<script src="plugins/placeholder.js"></script> 
+		
+		<!-- HTML5 Shim 和 Respond.js 让IE8 支持  HTML5 元素和媒体查询media queries -->
+	    <!--[if lt IE 9]>
+	        <script src="plugins/html5shiv.js"></script>
+	        <script src="plugins/respond.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<div id="wrapper">
+
+	        <!-- 导航栏 -->
+	        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	        	<!--顶部项目名/logo-->
+	            <div class="navbar-header">
+	            	<!-- 手机显示 -->
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+	                    <span class="sr-only">导航菜单</span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
+	                <a class="navbar-brand" href="index.html">幼儿园幼儿园幼儿园幼儿园</a>
+	            </div>
+	            <!-- 顶部右侧功能列表 -->
+	            <ul class="nav navbar-right top-nav">
+	                <li>
+	                	<img src="images/index/person.png" />
+	                    <a href="#">小一班张老师</a>
+	                </li>
+	                <li>
+	                    <a href="login.html" class="logout">退出</a>
+	                </li>
+	            </ul>
+	            <!-- 左侧菜单栏，手机也自适配 -->
+	            <div class="collapse navbar-collapse navbar-ex1-collapse">
+	                <ul id="leftMenu" class="nav navbar-nav side-nav">
+	                    <li class="menu-title">
+	                    	功能菜单
+	                    </li>
+	                    <li>
+	                        <a href="javascript:;" data-url="pages/group/group.html" class="icon-group">集团 </a>
+	                        <ul class="sub-menu">
+	                            <li>
+	                                <a href="javascript:;" data-url="pages/group/notice.html">通知公告</a>
+	                            </li>
+	                            <li>
+	                                <a href="javascript:;" data-url="pages/group/department.html">部门管理</a>
+	                            </li>
+	                            <li>
+	                                <a href="javascript:;" data-url="pages/group/job.html">职务管理</a>
+	                            </li>
+	                            <li>
+	                                <a href="javascript:;" data-url="pages/group/staff.html">员工管理</a>
+	                            </li>
+	                            <li>
+	                                <a href="javascript:;" data-url="pages/group/module.html">模块管理</a>
+	                            </li>
+	                            <li>
+	                                <a href="javascript:;" data-url="pages/group/information.html">信息维护</a>
+	                            </li>
+	                            <li>
+	                                <a href="javascript:;" data-url="pages/group/opinions.html">舆情管理</a>
+	                            </li>
+	                        </ul>
+	                    </li>
+	                    <li>
+	                        <a href="javascript:;" data-url="pages/school/school.html" class="icon-school">校园 </a>
+	                        <ul class="sub-menu">
+	                            <li>
+	                                <a href="javascript:;" data-url="pages/school/schoolAdd.html">添加校园</a>
+	                            </li>
+	                        </ul>
+	                    </li>
+	                    <li>
+	                        <a href="javascript:;" data-url="pages/data/data.html" class="icon-data">数据</a>
+	                        <ul class="sub-menu">
+	                            <li>
+	                                <a href="javascript:;" data-url="pages/data/dataDetail.html">数据详情</a>
+	                            </li>
+	                        </ul>
+	                    </li>
+	                    <li>
+	                        <a href="javascript:;" data-url="pages/myself/myself.html" class="icon-myself">我的</a>
+	                        <ul class="sub-menu">
+	                            <li>
+	                                <a href="javascript:;" data-url="pages/myself/personal.html">个人档案</a>
+	                            </li>
+	                            <li>
+	                                <a href="javascript:;" data-url="pages/myself/attendance.html">考勤管理</a>
+	                            </li>
+	                        </ul>
+	                    </li>
+	                    <li>
+	                        <a href="javascript:;" data-url="pages/system/system.html" class="icon-system">系统管理 </a>
+	                        <!--<ul class="sub-menu">
+	                            <li>
+	                                <a href="#">Item</a>
+	                            </li>
+	                            <li>
+	                                <a href="#">Item</a>
+	                            </li>
+	                        </ul>-->
+	                    </li>
+	                    <li>
+	                        <a href="javascript:;" data-url="pages/help/help.html" class="icon-help">帮助中心 </a>
+	                        <!--<ul class="sub-menu">
+	                            <li>
+	                                <a href="#">Item</a>
+	                            </li>
+	                            <li>
+	                                <a href="#">Item</a>
+	                            </li>
+	                        </ul>-->
+	                    </li>
+	                </ul>
+	            </div>
+	        </nav>
+	
+	        <div id="page-wrapper">
+				<!-- 内容 -->
+	            <iframe id="contentIframe" name="contentIframe" src="pages/group/group.html" frameborder="0" width="100%" height="100%"></iframe>
+	        </div>
+	        <!-- /#page-wrapper -->
+	
+	    </div>
+	    <!-- /#wrapper -->
+
+	</body>
+</html>

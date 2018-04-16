@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>新建家园联系</title>
+		
+		<!-- Bootstrap Core CSS -->
+	    <link href="../../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- 图标样式 -->
+	    <link href="../../plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    
+		<script src="../../plugins/jquery/jquery-1.11.1.min.js"></script>
+		<script src="../../plugins/bootstrap/js/bootstrap.min.js"></script>
+	   
+	    <!-- weui -->
+		<link rel="stylesheet" type="text/css" href="../../plugins/weui/css/weui.css" />
+        <script src="../../plugins/weui/js/weui.min.js" ></script>
+	    
+	    <!-- Custom CSS -->
+	    <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+	    <link rel="stylesheet" type="text/css" href="../../css/form.css"/>
+	    <link rel="stylesheet" type="text/css" href="../../css/pages/class/uploadForm.css"/>
+	    
+		<script src="../../js/common.js"></script>
+		<script src="../../js/class/relationAdd.js"></script>
+	    
+	    
+		<!-- HTML5 Shim 和 Respond.js 让IE8 支持  HTML5 元素和媒体查询media queries -->
+	    <!--[if lt IE 9]>
+	        <script src="../../plugins/html5shiv.js"></script>
+	        <script src="../../plugins/respond.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<div class="website">
+			<a href="../home.html"><img src="../../images/icon_home.png" /></a>
+			<a href="class.html">班务</a> &gt;
+			<a href="relation.html">家园联系</a> &gt;
+			<a href="relationAdd.html">新建家园联系</a>
+		</div>
+		<div class="container-fluid">
+			<form class="ys-form">
+				<div>
+					<label for="title">家园联系主题：</label>
+					<input id="title" type="text" class="form-control long">
+				</div>
+				<div>
+					<label for="remark" class="top">主题介绍：</label>
+					<textarea id="remark" class="form-control long" rows="3"></textarea>
+				</div>
+				<div>
+					<label class="top"></label>
+					<div class="weui-cells weui-cells_form long" id="uploader">
+						<div class="weui-cell">
+						    <div class="weui-cell__bd">
+						        <div class="weui-uploader">
+						            <div class="weui-uploader__bd">
+						                <ul class="weui-uploader__files" id="uploaderFiles"></ul>
+						                <div class="weui-uploader__input-box">
+						                    <!--<input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" capture="camera" multiple="" />-->
+						                    <input id="uploaderInput" class="weui-uploader__input" type="file" multiple="" />
+						                </div>
+						            </div>
+						        </div>
+						    </div>
+						</div>
+					</div>
+				</div>
+				<table class="table table-bordered short-table">
+					<thead>
+						<tr>
+							<th>学生姓名</th>
+							<th>反馈</th>
+							<th>评分</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>小麦兜</td>
+							<td>完成的不错</td>
+							<td>100</td>
+							<td><a href="#">编辑</a></td>
+						</tr>
+						<tr>
+							<td>大麦兜</td>
+							<td></td>
+							<td></td>
+							<td><a href="#">编辑</a></td>
+						</tr>
+						<tr>
+							<td>老麦兜</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="bottom-tool">
+					<a href="album.html" class="btn btn-ys">保存</a>
+					<a href="album.html" class="btn btn-ys">发布</a>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

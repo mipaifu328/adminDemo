@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>请假详情</title>
+		
+		<!-- Bootstrap Core CSS -->
+	    <link href="../../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- 图标样式 -->
+	    <link href="../../plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    
+		<script src="../../plugins/jquery/jquery-1.11.1.min.js"></script>
+		<script src="../../plugins/bootstrap/js/bootstrap.min.js"></script>
+	    
+        
+	    
+	    <!-- Custom CSS -->
+	    <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+	    <link rel="stylesheet" type="text/css" href="../../css/form.css"/>
+	    
+		<script src="../../js/common.js"></script>
+	    
+	    
+		<!-- HTML5 Shim 和 Respond.js 让IE8 支持  HTML5 元素和媒体查询media queries -->
+	    <!--[if lt IE 9]>
+	        <script src="../../plugins/html5shiv.js"></script>
+	        <script src="../../plugins/respond.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<div class="website">
+			<a href="../home.html"><img src="../../images/icon_home.png" /></a>
+			<a href="class.html">班务</a> &gt;
+			<a href="leave.html">请假管理</a> &gt;
+			<a href="leaveContent.html">请假详情</a>
+		</div>
+		<div class="container-fluid">
+				<form class="ys-form">
+					<div>
+						<label for="name">请假人：</label>
+						<input id="name" type="text" class="form-control short" value="小麦兜" disabled="disabled">
+					</div>
+					<div>
+						<label for="reason" class="top">请假原因：</label>
+						<textarea id="reason" class="form-control long" rows="3" disabled="disabled">生病了</textarea>
+					</div>
+					<div>
+						<label for="startDate">开始时间：</label>
+						<input id="startDate" type="text" class="form-control short" value="2018-11-09" disabled="disabled">
+					</div>
+					<div>
+						<label for="endDate">结束时间：</label>
+						<input id="endDate" type="text" class="form-control short" value="2018-11-10" disabled="disabled">
+					</div>
+					<div>
+						<a href="leave.html" class="btn btn-ys">返回</a>
+					</div>
+				</form>
+		</div>
+	</body>
+</html>

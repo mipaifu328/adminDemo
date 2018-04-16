@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>作业管理</title>
+		
+		<!-- Bootstrap Core CSS -->
+	    <link href="../../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- 图标样式 -->
+	    <link href="../../plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    
+		<script src="../../plugins/jquery/jquery-1.11.1.min.js"></script>
+		<script src="../../plugins/bootstrap/js/bootstrap.min.js"></script>
+	    
+	    <!--bootstrap table组件以及中文包的引用 -->
+	    <link href="../../plugins/bootstrap-table/bootstrap-table.css" rel="stylesheet" />
+	    <script src="../../plugins/bootstrap-table/bootstrap-table.js"></script>
+	    <script src="../../plugins/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+	    
+	    
+	    
+	   	<!-- mock.js 模拟后台请求 -->
+	    <script src="../../demo/mock.js"></script>
+	    
+	    <!-- Custom CSS -->
+	    <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+		<script src="../../js/common.js"></script>
+		<script src="../../js/class/homework.js"></script>
+	    
+	    
+		<!-- HTML5 Shim 和 Respond.js 让IE8 支持  HTML5 元素和媒体查询media queries -->
+	    <!--[if lt IE 9]>
+	        <script src="../../plugins/html5shiv.js"></script>
+	        <script src="../../plugins/respond.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<div class="website">
+			<a href="../home.html"><img src="../../images/icon_home.png" /></a>
+			<a href="class.html">班务</a> &gt;
+			<a href="homework.html">作业管理</a>
+		</div>
+		<div class="container-fluid">
+			<div id="toolbar" class="toolbar">
+				<div style="margin-bottom: 6px;">
+					<a href="homeworkAdd.html" class="btn btn-ys">添加作业</a>
+					<a href="javascript:;" class="btn btn-ys">删除</a>
+				</div>
+			</div>
+			<table id="homeworkTable" class="table-responsive"></table>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>预登记</title>
+		
+		<!-- Bootstrap Core CSS -->
+	    <link href="../../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- 图标样式 -->
+	    <link href="../../plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    
+		<script src="../../plugins/jquery/jquery-1.11.1.min.js"></script>
+		<script src="../../plugins/bootstrap/js/bootstrap.min.js"></script>
+	    
+	     <!-- check -->
+	    <link rel="stylesheet" type="text/css" href="../../plugins/icheck/skins/all.css"/>
+	    <script src="../../plugins/icheck/icheck.min.js"></script>
+	    
+	    <!-- Custom CSS -->
+	    <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+	    <link rel="stylesheet" type="text/css" href="../../css/form.css"/>
+		<script src="../../js/common.js"></script>
+	    
+	    
+		<!-- HTML5 Shim 和 Respond.js 让IE8 支持  HTML5 元素和媒体查询media queries -->
+	    <!--[if lt IE 9]>
+	        <script src="../../plugins/html5shiv.js"></script>
+	        <script src="../../plugins/respond.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<div class="website">
+			<a href="../home.html"><img src="../../images/icon_home.png" /></a>
+			<a href="school.html">校园</a> &gt;
+			<a href="enroll.html">报名登记</a> &gt;
+			<a href="enrollPre.html">预登记</a>
+		</div>
+		<div class="container-fluid">
+			<form class="ys-form">
+				<div class="two-items">
+					<div>
+						<label for="parentName">家长姓名：</label>
+						<input id="parentName" type="text" class="form-control short">
+					</div>
+					<div>
+						<label for="phone">家长手机：</label>
+						<input id="phone" type="tel" class="form-control short">
+					</div>
+				</div>
+				<div class="two-items">
+					<div>
+						<label>家长关系：</label>
+						<div class="checkbox-container">
+							<span><input type="radio" name="sexy">爸爸</span>
+							<span><input type="radio" name="sexy">妈妈</span>
+						</div>
+					</div>
+					<div>
+						<label for="school">意向校园：</label>
+						<input id="school" type="text" class="form-control short">
+					</div>
+				</div>
+				<div class="two-items">
+					<div>
+						<label for="studentName">学生姓名：</label>
+						<input id="studentName" type="text" class="form-control short">
+					</div>
+					<div>
+						<label for="age">学生岁数：</label>
+						<input id="age" type="number" class="form-control short">
+					</div>
+				</div>
+				<div>
+					<a href="enroll.html" class="btn btn-ys">提交</a>
+				</div>
+			</form>
+		</div>
+		
+		<script>
+	    	$(document).ready(function(){
+			  $('input').iCheck({
+			    checkboxClass: 'icheckbox_flat-green',
+			    radioClass: 'iradio_flat-green',
+			    increaseArea: '20%' // optional
+			  });
+			});
+	    </script>
+	</body>
+</html>

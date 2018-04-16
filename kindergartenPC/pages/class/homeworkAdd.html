@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>布置作业</title>
+		
+		<!-- Bootstrap Core CSS -->
+	    <link href="../../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- 图标样式 -->
+	    <link href="../../plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    
+		<script src="../../plugins/jquery/jquery-1.11.1.min.js"></script>
+		<script src="../../plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../../plugins/My97DatePicker/WdatePicker.js"></script>
+	    
+	    <!-- weui -->
+		<link rel="stylesheet" type="text/css" href="../../plugins/weui/css/weui.css" />
+        <script src="../../plugins/weui/js/weui.min.js" ></script>
+        
+	    
+	    <!-- Custom CSS -->
+	    <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+	    <link rel="stylesheet" type="text/css" href="../../css/form.css"/>
+	    <link rel="stylesheet" type="text/css" href="../../css/pages/class/uploadForm.css"/>
+	    
+		<script src="../../js/common.js"></script>
+		<script src="../../js/class/homeworkAdd.js"></script>
+	    
+	    
+		<!-- HTML5 Shim 和 Respond.js 让IE8 支持  HTML5 元素和媒体查询media queries -->
+	    <!--[if lt IE 9]>
+	        <script src="../../plugins/html5shiv.js"></script>
+	        <script src="../../plugins/respond.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<div class="website">
+			<a href="../home.html"><img src="../../images/icon_home.png" /></a>
+			<a href="class.html">班务</a> &gt;
+			<a href="homework.html">作业管理</a>
+		</div>
+		<div class="container-fluid">
+				<form class="ys-form">
+					<div>
+						<label for="name">作业标题：</label>
+						<input id="name" type="text" class="form-control long">
+					</div>
+					<div>
+						<label for="description" class="top">作业说明：</label>
+						<textarea id="description" class="form-control long" rows="3"></textarea>
+					</div>
+					<div>
+						<label for="stopTime" class="top">截止时间：</label>
+						<input id="stopTime" type="text" class="form-control short" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})">
+					</div>
+					<div>
+						<label class="top">上传相片：</label>
+						<div class="weui-cells weui-cells_form long" id="uploader">
+							<div class="weui-cell">
+							    <div class="weui-cell__bd">
+							        <div class="weui-uploader">
+							            <div class="weui-uploader__bd">
+							                <ul class="weui-uploader__files" id="uploaderFiles"></ul>
+							                <div class="weui-uploader__input-box">
+							                    <!--<input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" capture="camera" multiple="" />-->
+							                    <input id="uploaderInput" class="weui-uploader__input" type="file" multiple="" />
+							                </div>
+							            </div>
+							        </div>
+							    </div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<a href="homework.html" class="btn btn-ys">提交</a>
+					</div>
+				</form>
+		</div>
+	</body>
+</html>

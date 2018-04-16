@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<table class="dialog-table">
+			<tr>
+				<td>春田花花幼儿园：</td>
+				<td>
+					<div class="radio-box"><input type="radio" name="class" /> <span>大三班</span></div>
+					<div class="radio-box"><input type="radio" name="class" /> <span>大二班</span></div>
+					<div class="radio-box"><input type="radio" name="class" /> <span>大一班</span></div>
+					<div class="radio-box"><input type="radio" name="class" /> <span>中三班</span></div>
+					<div class="radio-box"><input type="radio" name="class" /> <span>中三班</span></div>
+					<div class="radio-box"><input type="radio" name="class" /> <span>中一班</span></div>
+					<div class="radio-box"><input type="radio" name="class" /> <span>小三班</span></div>
+					<div class="radio-box"><input type="radio" name="class" /> <span>小二班</span></div>
+					<div class="radio-box"><input type="radio" name="class" /> <span>小一班</span></div>
+				</td>
+			</tr>
+		</table>
+		<div class="dialog-bottom">
+			<button id="okBtn" type="button" class="btn btn-ys">提交</button>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$('.dialog-table input').iCheck({
+					checkboxClass: 'icheckbox_flat-green',
+					radioClass: 'iradio_flat-green',
+					increaseArea: '20%' // optional
+				});
+				
+				$('#okBtn').on('click',function(e){
+					dialog.close();
+					$.alert('调班成功');
+				});
+			});
+		</script>
+	</body>
+</html>

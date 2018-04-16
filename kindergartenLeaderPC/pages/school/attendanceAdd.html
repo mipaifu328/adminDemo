@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>登记学生</title>
+		
+		<!-- Bootstrap Core CSS -->
+	    <link href="../../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- 图标样式 -->
+	    <link href="../../plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    
+		<script src="../../plugins/jquery/jquery-1.11.1.min.js"></script>
+		<script src="../../plugins/bootstrap/js/bootstrap.min.js"></script>
+    	<script src="../../plugins/My97DatePicker/WdatePicker.js"></script>
+	    
+	     <!-- check -->
+	    <link rel="stylesheet" type="text/css" href="../../plugins/icheck/skins/all.css"/>
+	    <script src="../../plugins/icheck/icheck.min.js"></script>
+	    
+	    <!-- Custom CSS -->
+	    <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+	    <link rel="stylesheet" type="text/css" href="../../css/form.css"/>
+		<script src="../../js/common.js"></script>
+	    
+	    
+		<!-- ie低版本不显示placeholder -->
+		<script src="../../plugins/placeholder.js"></script> 
+		<!-- HTML5 Shim 和 Respond.js 让IE8 支持  HTML5 元素和媒体查询media queries -->
+	    <!--[if lt IE 9]>
+	        <script src="../../plugins/html5shiv.js"></script>
+	        <script src="../../plugins/respond.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<div class="website">
+			<a href="../home.html"><img src="../../images/icon_home.png" /></a>
+			<a href="school.html">校园</a> &gt;
+			<a href="attendance.html">考勤管理</a> &gt;
+			<a href="attendanceAdd.html">添加考勤方案</a>
+		</div>
+		<div class="container-fluid">
+			<form class="ys-form">
+				<div>
+					<label for="name">方案名称：</label>
+					<input id="name" type="text" class="form-control long">
+				</div>
+				<div>
+					<label for="remark" class="top">方案说明：</label>
+					<textarea id="remark" class="form-control long" rows="4"></textarea>
+				</div>
+				<div>
+					<label for="area">考勤范围：</label>
+					<input id="area" type="text" class="form-control long">
+				</div>
+				<div>
+					<button type="button" class="btn btn-ys btn-1">添加考勤时间</button>
+				</div>
+				<div>
+					<label>考勤时间：</label>
+					<div class="col3">
+						<select name="" class="form-control short3">
+							<option value="">上午</option>
+						</select>
+					</div>
+					<div class="col3">
+						<input type="text" class="form-control short3" id="startTime1" placeholder="开始时间" onFocus="WdatePicker({maxDate:'#F{$dp.$D(\'endTime1\')}'})">
+					</div>
+					<div class="col3">
+						<input type="text" class="form-control short3" id="endTime1" placeholder="结束时间" onFocus="WdatePicker({minDate:'#F{$dp.$D(\'startTime1\')}'})">
+					</div>
+				</div>
+				<div>
+					<label>考勤时间：</label>
+					<div class="col3">
+						<select name="" class="form-control ">
+							<option value="">下午</option>
+						</select>
+					</div>
+					<div class="col3">
+						<input type="text" class="form-control short3" id="startTime2" placeholder="开始时间" onFocus="WdatePicker({maxDate:'#F{$dp.$D(\'endTime2\')}'})">
+					</div>
+					<div class="col3">
+						<input type="text" class="form-control short3" id="endTime2" placeholder="结束时间" onFocus="WdatePicker({minDate:'#F{$dp.$D(\'startTime2\')}'})">
+					</div>
+				</div>
+				<div>
+					<a href="enroll.html" class="btn btn-ys">提交</a>
+				</div>
+			</form>
+		</div>
+		
+		<script>
+	    	$(document).ready(function(){
+			  $('input').iCheck({
+			    checkboxClass: 'icheckbox_flat-green',
+			    radioClass: 'iradio_flat-green',
+			    increaseArea: '20%' // optional
+			  });
+			});
+	    </script>
+	</body>
+</html>

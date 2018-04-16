@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>部门管理</title>
+		
+		<!-- Bootstrap Core CSS -->
+	    <link href="../../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- 图标样式 -->
+	    <link href="../../plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    <!-- Custom CSS -->
+	    <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+	    <link rel="stylesheet" type="text/css" href="../../css/form.css"/>
+	    <link rel="stylesheet" type="text/css" href="../../css/leftContainer.css"/>
+	    
+		<!-- HTML5 Shim 和 Respond.js 让IE8 支持  HTML5 元素和媒体查询media queries -->
+	    <!--[if lt IE 9]>
+	        <script src="../../plugins/html5shiv.js"></script>
+	        <script src="../../plugins/respond.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<div class="website">
+			<a href="#"><img src="../../images/icon_home.png" /></a>
+			<a href="system.html">系统管理</a> &gt;
+			<a href="department.html">部门管理</a>
+		</div>
+		<div class="container-fluid">
+			<div class="left-container">
+				<ul>
+					<span class="ul-title" href="javascript:;">集团</span>
+					<li>
+						<a class="sub-title" href="javascript:;">总经办</a>
+						<ul class="sub-ul">
+							<li><a href="javascript:;">二级部门</a></li>
+						</ul>
+					</li>
+					<li><a href="javascript:;">市场部</a></li>
+					<li><a href="javascript:;">运营部</a></li>
+				</ul>
+			</div>
+			<div class="right-container">
+				<form class="ys-form">
+					<div>
+						<label for="name">部门名称：</label>
+						<input id="name" type="text" class="form-control long">
+					</div>
+					<div>
+						<label for="description" class="top">部门描述：</label>
+						<textarea id="description" class="form-control long" rows="3"></textarea>
+					</div>
+					<div>
+						<a href="#" class="btn btn-ys">提交</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script src="../../plugins/jquery/jquery-1.11.1.min.js"></script>
+		<script src="../../plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../../js/common.js"></script>
+		<script src="../../js/leftContainer.js"></script>
+	</body>
+</html>

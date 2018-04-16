@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>首页</title>
+		
+		<!-- Bootstrap Core CSS -->
+	    <link href="../../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- 图标样式 -->
+	    <link href="../../plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    <!-- Custom CSS -->
+	    <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+	    <link rel="stylesheet" type="text/css" href="../../css/pages/myself/personal.css"/>
+	    
+		<script src="../../plugins/jquery/jquery-1.11.1.min.js"></script>
+		<script src="../../plugins/bootstrap/js/bootstrap.min.js"></script>
+		
+		<!-- check -->
+	    <link rel="stylesheet" type="text/css" href="../../plugins/icheck/skins/all.css"/>
+	    <script src="../../plugins/icheck/icheck.min.js"></script>
+	    
+	    <!-- webuploader -->
+	   	<script type="text/javascript" src="../../plugins/webuploader/dist/webuploader.js" ></script>
+	   	
+	   	<!-- mock.js 模拟后台请求 -->
+	    <script src="../../demo/mock.js"></script>
+	    
+		<script src="../../js/common.js"></script>
+		<script src="../../js/myself/personal.js"></script>
+	    
+	    
+		<!-- HTML5 Shim 和 Respond.js 让IE8 支持  HTML5 元素和媒体查询media queries -->
+	    <!--[if lt IE 9]>
+	        <script src="../../plugins/html5shiv.js"></script>
+	        <script src="../../plugins/respond.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<div class="website">
+			<a href="../home.html"><img src="../../images/icon_home.png" /></a>
+			<a href="myself.html">我的</a> &gt;
+			<a href="#">个人档案</a>
+		</div>
+		<div class="container-fluid">
+			<div class="personal-top">
+				<div class="picture-container">
+					<div id="pictureBox" class="picture-box">
+						<img src="../../images/myself/picture.png" />
+					</div>
+					<div id="filePicker" class="picture-btn">修改头像</div>
+				</div>
+				<div class="personal-info">
+					<div class="two-items">
+						<div><label for="name">姓名：</label><input id="name" type="text" class="form-control short"></div>
+						<div><label for="phone">联系电话：</label><input id="phone" type="tel" class="form-control short"></div>
+					</div>
+					<div class="two-items">
+						<div><label for="idCard">身份证：</label><input id="idCard" type="text" class="form-control short"></div>
+						<div><label for="job">职称：</label><input id="card" type="text" class="form-control short"></div>
+					</div>
+					<div class="two-items checkbox">
+						<div>
+							<label>性别：</label>
+							<input type="radio" name="sexy" checked="checked"><span>男</span>
+							<input type="radio" name="sexy"><span>女</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<ul class="personal-history">
+				<li>
+					<span class="date-time">2017/09/08</span>
+					中二班 担任 班主任
+				</li>
+				<li>
+					<span class="date-time">2016/10/08</span>
+					中二班 担任 老师
+				</li>
+				<li>
+					<span class="date-time">2015/02/08</span>
+					入职
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

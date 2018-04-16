@@ -1,0 +1,27 @@
+.dialog-table{
+	table-layout: fixed;
+}
+.dialog-table td{
+	padding:10px 0;
+}
+.dialog-table td:first-child{
+	vertical-align: top;
+	min-width: 120px;
+}
+.dialog-table .radio-box{
+	display: inline-block;
+	margin-bottom:10px;
+}
+.dialog-table span{
+	margin: 0 15px 0 4px;
+}
+.dialog-bottom{
+	margin: 20px 0 10px 0;
+	text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+	.dialog-table .radio-box{
+		display: block;
+	}
+}

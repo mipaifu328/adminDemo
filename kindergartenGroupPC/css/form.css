@@ -1,0 +1,182 @@
+.ys-form{
+	margin-top:10px;
+}
+.ys-form > div{
+	margin-top:20px;
+}
+.ys-form label{
+	display: inline-block;
+	width: 100px;
+	font-weight: normal;
+	text-align: right;
+}
+.ys-form label.top{
+	vertical-align: top;
+}
+.ys-form .table-label{
+	position: relative;
+}
+.ys-form .table-label label{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.ys-form .long{
+	display: inline-block;
+	width: 564px;
+}
+.ys-form .short{
+	display: inline-block;
+	width: 200px;
+}
+.ys-form .col3{
+	display: inline-block;
+	width: 185px;
+}
+.ys-form .btn-1{
+	margin-left:104px;
+}
+.ys-form a.btn{
+	margin-top:50px;
+	width:100px;
+	margin-left:300px;
+}
+.upload{
+	margin-left:100px;
+	position: relative;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color:#999;
+	background-color:#eee;
+	overflow: hidden;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.upload input{
+	position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    text-align: right;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    background: none;
+    cursor: inherit;
+    display: block;
+}
+
+
+.checkbox-container{
+	display: inline-block;
+}
+.checkbox-container > span{
+	margin-right:15px;
+}
+.checkbox-container > span >div{
+	margin-right: 4px;
+}
+
+
+
+.ys-form div.two-items{
+	margin-top:0;
+}
+.ys-form div.two-items>div{
+	display: inline-block;
+	margin:10px 0;
+	width: 360px;
+}
+
+.ys-form .choose a.btn{
+	margin: 0;
+}
+.ys-form .choose .long{
+	width: 458px;
+}
+
+.short-table{
+	margin: 20px 0;
+	margin-left:105px;
+	width: 564px;
+	table-layout: fixed;
+}
+.btn-form{
+	margin-top:10px;
+	margin-left: 105px;
+}
+.short-table th{
+	background-color: #f5f5f5;
+}
+/*.short-table th:first-child,
+.short-table td:first-child{
+	width: 40%;
+}*/
+.short-table input{
+	border: none;
+}
+
+
+div.bottom-tool{
+	margin-top:50px;
+	width: 700px;
+	text-align: center;
+}
+.bottom-tool a.btn{
+	margin:0 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.ys-form > div,
+	.ys-form .long,
+	.ys-form .short,
+	.ys-form .choose .long{
+		width: 100%;
+	}
+	.ys-form a.btn,
+	.ys-form .btn-1,
+	.upload{
+		width: 100%;
+		margin: 0;
+	}
+	.ys-form .choose a.btn{
+		margin-top: 10px;
+	}
+	.checkbox-container,
+	.checkbox-container > span{
+		display: block;
+		margin-top:15px;
+	}
+	.ys-form div.two-items>div{
+		width: 100%;
+	}
+	.short-table{
+		margin: 20px 0;
+		width: 100%;
+	}
+	.btn-form{
+		margin-left: 0;
+		width: 100%;
+	}
+	.ys-form label{
+		text-align: left;
+	}
+	div.bottom-tool{
+		margin: 0;
+	}
+	.bottom-tool a.btn{
+		margin-top:10px;
+	}
+	
+	.ys-form .table-label label{
+		position: static;
+	}
+	
+	.ys-form .col3{
+		width: 100%;
+		margin-top:10px;
+	}
+}

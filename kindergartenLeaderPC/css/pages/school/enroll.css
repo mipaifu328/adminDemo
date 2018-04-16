@@ -1,0 +1,33 @@
+ ul{
+ 	margin: 0;
+ }
+ .weui-cells{
+ 	border:1px solid #ccc;
+ 	border-radius: 4px;
+ 	margin-top: -6px;
+ }
+.weui-uploader__input-box{
+	background-color: #dadada;
+}
+.weui-uploader__input-box:before,
+.weui-uploader__input-box:after{
+	background-color: #999;
+}
+
+
+.title{
+	font-size: 18px;
+	font-weight: bold;
+	padding: 5px 0;
+}
+
+div.bottom-tool{
+	width: 564px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+	div.bottom-tool{
+		width: 100%;
+	}
+}

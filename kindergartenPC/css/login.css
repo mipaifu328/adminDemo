@@ -1,0 +1,113 @@
+html{
+	height:100%;
+}
+body{
+	overflow:hidden;
+	height:100%;
+	background:#21baa8 url(../images/login/login_bg.png) top center no-repeat;
+	background-size: 100%;
+	background-size: cover;
+	font-size: 16px;
+}
+.title{
+		margin-top:100px;
+		height:46px;
+		text-align: center;
+    	font-size:30px;
+		color:#fff;
+} 
+.form{
+	width:100%;
+	max-width:300px;
+	margin:40px auto;
+	background-color:#f5fbfb; 
+	/*background: rgba(255,255,255,0.6);*/
+	padding:40px 60px 80px;
+	box-sizing: content-box;
+}  
+.form-group{
+	position: relative;
+	margin-top: 20px;
+}
+.form-control{
+    height: 40px;
+}
+.fa{
+	display: inline-block;
+	position: absolute;
+	top: 12px;
+	left: 10px;
+	color: #ccc;
+	z-index: 2;
+}  
+input[type="text"],
+input[type="password"]{
+	padding-left:30px;
+	font-size: 16px;
+}
+
+.code{
+	overflow: hidden;
+	margin-top:20px;
+}
+.code input{
+	float: left;
+	display: block;
+	width:100px;
+	padding-left:10px;
+	font-size: 16px;
+}
+.code img{
+	float: left;
+	display: block;
+	margin-left:20px;
+	width:110px;
+	height: 40px;
+}
+.code a{
+	color:#21BAA8;
+	margin-left:20px;
+	line-height: 40px;
+}
+.form-group .btn{
+	margin-top:20px;
+}
+.form-bottom{
+	margin-top:15px;
+}
+.form-bottom > div{
+	float: left;
+}
+.form-bottom a{
+	float: right;
+	color:#000;
+}
+@media(max-width:768px) {
+	body{
+		background:#21baa8 url(../images/login/login_m_bg.jpg) top center no-repeat;
+		background-size: 100% 100% ;
+	}
+	.container{
+		padding: 5%;
+		height: 100%;
+	}
+    .title{
+		margin-top:20%;
+		font-size:24px;
+	}
+	.form{
+		margin:10% auto;
+		padding: 30px 30px 50px;
+		box-sizing: border-box;
+	}  
+	.code input{
+		width:47%;
+	}
+	.code img{
+		margin-left:6%;
+		width:47%;
+	}
+	.code a{
+		display: none;
+	}
+}

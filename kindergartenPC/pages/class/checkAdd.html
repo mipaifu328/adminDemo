@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>添加检查</title>
+		
+		<!-- Bootstrap Core CSS -->
+	    <link href="../../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- 图标样式 -->
+	    <link href="../../plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    
+		<script src="../../plugins/jquery/jquery-1.11.1.min.js"></script>
+		<script src="../../plugins/bootstrap/js/bootstrap.min.js"></script>
+	    
+	    <!-- weui -->
+		<link rel="stylesheet" type="text/css" href="../../plugins/weui/css/weui.css" />
+        <script src="../../plugins/weui/js/weui.min.js" ></script>
+        
+	    
+	    <!-- Custom CSS -->
+	    <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+	    <link rel="stylesheet" type="text/css" href="../../css/form.css"/>
+	    
+		<script src="../../js/common.js"></script>
+	    
+	    
+		<!-- HTML5 Shim 和 Respond.js 让IE8 支持  HTML5 元素和媒体查询media queries -->
+	    <!--[if lt IE 9]>
+	        <script src="../../plugins/html5shiv.js"></script>
+	        <script src="../../plugins/respond.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<div class="website">
+			<a href="../home.html"><img src="../../images/icon_home.png" /></a>
+			<a href="class.html">班务</a> &gt;
+			<a href="check.html">晨检管理</a> &gt;
+			<a href="checkAdd.html">添加检查</a>
+		</div>
+		<div class="container-fluid">
+			<form class="ys-form">
+				<div class="two-items">
+					<div>
+						<label for="name">学生名称：</label>
+						<input id="name" type="text" class="form-control short">
+					</div>
+					<div>
+						<label for="type">类型检查：</label>
+						<select id="type" class="form-control short">
+							<option>晨检</option>
+						</select>
+					</div>
+				</div>
+				<div>
+					<label for="remark" class="top">检查说明：</label>
+					<textarea id="remark" class="form-control long" rows="3"></textarea>
+				</div>
+				<table class="table table-bordered short-table">
+					<thead>
+						<tr>
+							<th>检查项</th>
+							<th>建议</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>体温</td>
+							<td>异常</td>
+							<td>温度过高</td>
+						</tr>
+						<tr>
+							<td>指甲</td>
+							<td>正常</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>手指</td>
+							<td>正常</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<div>
+					<a href="money.html" class="btn btn-ys">添加检查项</a>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>登记学生</title>
+		
+		<!-- Bootstrap Core CSS -->
+	    <link href="../../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- 图标样式 -->
+	    <link href="../../plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    
+		<script src="../../plugins/jquery/jquery-1.11.1.min.js"></script>
+		<script src="../../plugins/bootstrap/js/bootstrap.min.js"></script>
+	    
+	    <!-- 弹出框 -->
+		<link rel="stylesheet" type="text/css" href="../../plugins/bootstrap-dialog/bootstrap-dialog.css" />
+		<script type="text/javascript" src="../../plugins/bootstrap-dialog/bootstrap-dialog.js"></script>
+		<script type="text/javascript" src="../../plugins/bootstrap-dialog/my-dialog.js"></script>
+	    
+	     <!-- check -->
+	    <link rel="stylesheet" type="text/css" href="../../plugins/icheck/skins/all.css"/>
+	    <script src="../../plugins/icheck/icheck.min.js"></script>
+	    
+	    <!-- Custom CSS -->
+	    <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+	    <link rel="stylesheet" type="text/css" href="../../css/form.css"/>
+	    <link rel="stylesheet" type="text/css" href="../../css/pages/wx/keywordsAdd.css"/>
+		<script src="../../js/common.js"></script>
+	    
+		<script src="../../js/wx/keywordsAdd.js"></script>
+	    
+		<!-- ie低版本不显示placeholder -->
+		<script src="../../plugins/placeholder.js"></script> 
+		<!-- HTML5 Shim 和 Respond.js 让IE8 支持  HTML5 元素和媒体查询media queries -->
+	    <!--[if lt IE 9]>
+	        <script src="../../plugins/html5shiv.js"></script>
+	        <script src="../../plugins/respond.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<div class="website">
+			<a href="../home.html"><img src="../../images/icon_home.png" /></a>
+			<a href="#">服务号管理</a> &gt;
+			<a href="keywords.html">关键字设置</a> &gt;
+			<a href="keywordsAdd.html">添加关键字</a>
+		</div>
+		<div class="container-fluid">
+			<form class="ys-form">
+				<div>
+					<label for="name">规则名称：</label>
+					<input id="name" type="text" placeholder="输入规则名称" class="form-control long">
+				</div>
+				<div>
+					<label for="keywords">关键字：</label>
+					<input id="keywords" type="text" placeholder="输入关键字" class="form-control long">
+				</div>
+				<div class="keywords-reply-container">
+					<label class="top">回复内容：</label>
+					<div>
+						<ul class="keywords-reply-list">
+							<li class="keywords-reply-item">
+								<div class="reply-media-text">
+									<span>哈哈哈，这是我的文本回复信息</span>
+									<div class="reply-media-opr">
+										<a data-operate="edit">编辑</a>
+										<a data-operate="delete">删除</a>
+									</div>
+								</div>
+							</li>
+							<li class="keywords-reply-item">
+								<div class="reply-media-appmsg">
+									<a href="" target="_blank" class="appmsg-title">爱你</a>
+									<i class="appmsg-img" style="background-image: url(&quot;../../images/school/wap_demo.png&quot;);"></i>
+									<p title="送你一朵" class="appmsg-desc">送你一朵</p>
+									<div class="reply-media-opr">
+										<a data-operate="delete">删除</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="msg-sender-area">
+							<button class="msg-sender-add" type="button">添加</button>
+							<div class="msg-sender-wrp" style="display: none;">
+								<ul class="msg-sender__tabs">
+									<li class="msg-sender__tab msg-sender__tab_appmsg">图文消息</li>
+									<li class="msg-sender__tab msg-sender__tab_text">文字</li>
+									<!--<li class="msg-sender__tab msg-sender__tab_img">图片</li>
+									<li class="msg-sender__tab msg-sender__tab_audio">语音</li>
+									<li class="msg-sender__tab msg-sender__tab_video">视频</li>-->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="radio-box">
+					<label>回复方式：</label>
+					<input name="method" type="radio"><span>回复全部</span>
+					<input name="method" type="radio" checked="checked"><span>随机回复一条</span>
+				</div>
+				<div class="footer-tool">
+					<a id="saveBtn" href="javascript:;" class="btn btn-ys">保存</a>
+					<a id="cancelBtn" href="javascript:;" class="btn btn-ys">取消</a>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

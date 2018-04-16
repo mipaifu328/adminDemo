@@ -1,0 +1,182 @@
+.wap-navbar{
+	height: 50px;
+	overflow: hidden;
+	border-bottom: 1px solid #eee;
+}
+.wap-navbar__item{
+	float: left;
+	padding: 0 20px;
+	height: 49px;
+	line-height: 49px;
+	cursor: pointer;
+}
+.wap-navbar__item.current{
+	color: #21BAA8;
+    background-color: #fff;
+    border-bottom: 2px solid #21BAA8;
+}
+/*新闻*/
+table{
+	width: 100%;
+	table-layout: fixed;
+}
+table tr td {   
+    text-overflow: ellipsis; /* for IE */  
+    -moz-text-overflow: ellipsis; /* for Firefox,mozilla */  
+    overflow: hidden;   
+    white-space: nowrap;    
+} 
+.wap-tab__content{
+	display: none;	
+}
+
+
+/*校园特色*/
+.wap-picture-container{
+	position: relative;
+	padding-left: 240px;
+}
+.left-container{
+	position: absolute;
+	left: 0;
+	top:20px;
+	width:200px ;
+	height: 500px;
+	overflow-y:auto;
+	border:1px solid #e9e9e9;
+}
+.left-container ul{
+	padding:0;
+	list-style: none;
+}
+.left-container ul li{
+	line-height: 40px;
+	text-indent: 20px;
+	cursor: pointer;
+}
+.left-container ul a{
+	position: relative;
+	display: block;
+	width: 100%;
+	color:#333;
+	text-decoration: none;
+	white-space:nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+}
+.left-container .ul-title{
+	position: relative;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	text-indent: 20px;
+	font-size: 16px;
+	color: #21BAA8;
+	border-bottom: 1px solid #e9e9e9;
+	background-color: #E8F8F7;
+}
+.left-container .ul-title:after{
+	content: "\e259";
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    color: #21BAA8;
+    font-size: 12px;
+    font-family: 'Glyphicons Halflings';
+}
+.left-container .sub-title{
+	position: relative;
+	display: block;
+}
+.left-container .sub-title.active:before{
+	content: "\e259";
+    position: absolute;
+    top: 0px;
+    left: -15px;
+    color: #333;
+    font-size: 12px;
+    font-family: 'Glyphicons Halflings';
+}
+.left-container .sub-title:before{
+	content: "\e258";
+    position: absolute;
+    top: 0px;
+    left: -15px;
+    color: #333;
+    font-size: 12px;
+    font-family: 'Glyphicons Halflings';
+}
+.left-container .sub-ul{
+	display: none;
+}
+.left-container .sub-ul a{
+	padding-left:15px;
+}
+.left-container ul a:hover,
+.left-container ul a.active{
+	background-color: #f9f9f9;
+}
+
+
+
+
+
+.right-container{
+	margin-left:-20px;
+	margin-top:-20px;
+}
+.picture-items{
+	float: left;
+	margin-top:20px;
+	margin-left: 20px;
+	position: relative;
+	width: 250px;
+	height: 160px;
+	border: 1px solid #eee;
+}
+.picture-items .check-box{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #fff;
+	padding:2px;
+}
+.picture-items img{
+	width: 100%;
+	height: 100%;
+}
+.right-container .picture-bottom{
+	clear: left;
+	padding-top:20px;
+	text-align: center;
+}
+.right-container .picture-bottom .btn{
+	margin: 0;
+}
+@media only screen and (max-width: 768px){
+	.wap-navbar__item{
+		width: 33%;
+	}
+	.wap-picture-container{
+		position: relative;
+		padding-left: 0;
+	}
+	.left-container{
+		position: static;
+		width:100% ;
+		margin-top:15px;
+		height: auto;
+		border:1px solid #e9e9e9;
+	}
+	.left-container .ul-title{
+		height: 44px;
+		line-height: 44px;
+	}
+	.right-container{
+		margin-left: 0;
+	}
+	.picture-items{
+		margin-left: 0;
+		width: 100%;
+	}
+}

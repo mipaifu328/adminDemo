@@ -1,0 +1,49 @@
+ ul{
+ 	margin: 0;
+ }
+ .weui-cells{
+ 	border:1px solid #ccc;
+ 	border-radius: 4px;
+ }
+.weui-uploader__input-box{
+	background-color: #dadada;
+}
+.weui-uploader__input-box:before,
+.weui-uploader__input-box:after{
+	background-color: #999;
+}
+
+.mail-container{
+	width: 600px;
+}
+.mail-title{
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px 0;
+}
+.mail-container textarea{
+	line-height: 30px;
+}
+.mail-center{
+	margin-top:15px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #21BAA8;
+}
+.mail-center .btn{
+	width: 80px;
+	margin-right:20px;
+}
+
+.mail-items{
+	margin-top: 20px;
+	padding: 10px;
+	background-color: #efefef;
+	border-radius: 4px;
+	line-height: 24px;
+}
+
+@media only screen and (max-width: 768px){
+	.mail-container{
+		width: 100%;
+	}
+}

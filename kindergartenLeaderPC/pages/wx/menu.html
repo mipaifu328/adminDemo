@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>自定义菜单</title>
+		
+		<!-- Bootstrap Core CSS -->
+	    <link href="../../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<script src="../../plugins/jquery/jquery-1.11.1.min.js"></script>
+		<script src="../../plugins/bootstrap/js/bootstrap.min.js"></script>
+		
+	    <!-- 图标样式 -->
+	    <link href="../../plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    
+	    
+	    <!-- 弹出框 -->
+		<link rel="stylesheet" type="text/css" href="../../plugins/bootstrap-dialog/bootstrap-dialog.css" />
+		<script type="text/javascript" src="../../plugins/bootstrap-dialog/bootstrap-dialog.js"></script>
+		<script type="text/javascript" src="../../plugins/bootstrap-dialog/my-dialog.js"></script>
+	    
+	    <!-- Custom CSS -->
+	    <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+	    <link rel="stylesheet" type="text/css" href="../../css/pages/wx/menu.css"/>
+	    
+	    
+		<!-- mock.js模拟后台请求数据 -->
+		<script src="../../demo/mock.js"></script>
+		
+		<script src="../../js/common.js"></script>
+		<script src="../../js/wx/menu.js"></script>
+	    
+		<!-- HTML5 Shim 和 Respond.js 让IE8 支持  HTML5 元素和媒体查询media queries -->
+	    <!--[if lt IE 9]>
+	        <script src="../../plugins/html5shiv.js"></script>
+	        <script src="../../plugins/respond.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<div class="website">
+			<a href="../home.html"><img src="../../images/icon_home.png" /></a>
+			<a href="#">服务号管理</a> &gt;
+			<a href="menu.html">自定义菜单</a>
+		</div>
+		<div class="container-fluid">
+			<div class="menu-setting">
+				
+				<!-- 手机预览 -->
+				<div class="mobile-menu-preview">
+					<div class="mobile-title">乐知德</div>
+					<div class="mobile-bottom">
+						<ul class="pre-menu-list" id="menuList">
+							<!--<li class="pre-menu-item size1of2">
+								<a href="javascript:void(0);" class="pre-menu-link">
+		                            <i class="menu-dot-icon"></i>
+		                       		<span>菜单名称</span>
+								</a>
+								<div class="sub-pre-menu-box">
+									<ul class="sub-pre-menu-list">
+										<li>
+											<a href="javascript:;">
+												<span class="sub-pre-menu-inner">
+													<span>子菜单名称</span>
+												</span>
+											</a>
+										</li>
+										<li class="current">
+											<a href="javascript:;">
+												<span class="sub-pre-menu-inner">
+													<span>子菜单名称</span>
+												</span>
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;" class="js_addL2Btn" title="最多添加5个子菜单">
+												<span class="sub-pre-menu-inner">
+													<i class="menu-add-icon"></i>
+												</span>
+											</a>
+										</li>
+									</ul>
+									<i class="arrow arrow_out"></i>
+									<i class="arrow arrow_in"></i>
+								</div>
+							</li>
+							<li class="pre-menu-item no-extra size1of2">
+								<a href="javascript:;" class="pre-menu-link" title="最多添加3个一级菜单">
+									<i class="menu-add-icon"></i>
+								</a>
+							</li>-->
+						</ul>
+					</div>
+				</div>
+				
+				<!-- 菜单内容编辑 -->
+				<div class="menu-editor">
+					<div class="editor-inner">
+						<div class="menu-title-bar">
+							<h4 class="menu-title-info">菜单名称</h4>
+							<div class="menu-title-operate">
+								<a href="javascript:void(0);" class="js_delete">删除菜单</a>
+							</div>
+						</div>
+						<div class="menu-eidtor-content">
+							<div class="menu-eidtor-tip js_innerNone">已添加子菜单，仅可设置菜单名称。</div>
+							<div class="frm-control-group js_setNameBox">
+								<label for="" class="frm-label">
+									<strong class="title">菜单名称</strong>
+								</label>
+								<div class="frm-controls">
+									<span class="frm-input-box">
+										<input type="text" class="frm-input js_menu_name">
+									</span>
+									<p class="frm-msg fail">字数超过上限</p>
+									<p class="frm-msg">字数不超过4个汉字或8个字母</p>
+								</div>
+							</div>
+							
+							<div class="frm-control-group">
+								<label for="" class="frm-label">
+									<strong class="title">菜单内容</strong>
+								</label>
+								<div class="frm-controls frm-vertical-pt">
+									<!--<label class="frm-radio-label">
+										<i class="icon-radio"></i>
+										<span class="lbl-content">发送消息</span>
+										<input type="radio" name="hello" class="frm-radio">
+									</label>-->
+									<label class="frm-radio-label selected">
+										<i class="icon-radio"></i>
+										<span class="lbl-content">跳转网页</span>
+										<input type="radio" name="hello" class="frm-radio">
+									</label>
+								</div>
+							</div>
+							
+							<div class="menu-content-container">
+								<div class="menu-content url">
+									<form action="" id="urlForm" onsubmit="return false;">
+										<p class="menu-eidtor-tip">订阅者点击该子菜单会跳到以下链接</p>
+										<div class="frm-control-group">
+											<label for="" class="frm-label">页面地址</label>
+											<div class="frm-controls">
+												<span class="frm-input-box">
+													<input type="text" class="frm-input" id="urlText" name="urlText">
+												</span>
+												<p class="frm-msg fail">请输入页面地址</p>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<span class="editor-arrow-wrp">
+						<i class="editor-arrow editor-arrow-out"></i>
+						<i class="editor-arrow editor-arrow-in"></i>
+					</span>
+				</div>
+				
+			</div>
+			<div class="tool-bar">
+				<a id="saveBtn" href="javascript:;" class="btn btn-ys">保存并发布</a>
+			</div>
+		</div>
+	</body>
+</html>
