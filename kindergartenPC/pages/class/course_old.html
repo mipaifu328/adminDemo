@@ -16,25 +16,18 @@
 	    <!-- 图标样式 -->
 	    <link href="../../plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	    
-	    <!-- fullcalendar -->
-	    <link href='../../plugins/fullcalendar/fullcalendar.css' rel='stylesheet' />
-		<link href='../../plugins/fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
-		<script src='../../plugins/fullcalendar/moment.min.js'></script>
-		
-		<script src='../../plugins/fullcalendar/jquery.min.js'></script>
-		<script src='../../plugins/fullcalendar/jquery-ui.min.js'></script>
-		<script src='../../plugins/fullcalendar/fullcalendar.js'></script>
-		<script src='../../plugins/fullcalendar/locale/zh-cn.js'></script>
+	    <!-- laydate日历 -->
+        <script src="../../plugins/laydate/laydate.js"></script>
         
 	    
 	    <!-- Custom CSS -->
 	    <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
-	    <link rel="stylesheet" type="text/css" href="../../css/pages/class/course.css"/>
+	    <link rel="stylesheet" type="text/css" href="../../css/pages/class/course_old.css"/>
 		<script src="../../js/common.js"></script>
 		
 		<!-- mock.js模拟后台请求数据 -->
 		<script src="../../demo/mock.js"></script>
-		<script src="../../js/class/course.js"></script>
+		<script src="../../js/class/course_old.js"></script>
 	    
 		<!-- HTML5 Shim 和 Respond.js 让IE8 支持  HTML5 元素和媒体查询media queries -->
 	    <!--[if lt IE 9]>
@@ -49,28 +42,39 @@
 			<a href="course.html">班级课程</a>
 		</div>
 		<div class="container-fluid">
-			<div id='wrap'>
-			
-			    <div id='external-events'>
-			      <h4>课程列表</h4>
-			      <div class='fc-event'>跳舞</div>
-			      <div class='fc-event'>唱歌</div>
-			      <div class='fc-event'>游戏</div>
-			      <div class='fc-event'>礼仪</div>
-			      <div class='fc-event'>故事</div>
-			      <div class='fc-event'>户外</div>
-			      <div class='fc-event'>手工</div>
-			      <div class='fc-event'>交流</div>
-			      <div class='fc-event'>劳动</div>
-			      <!--<p>
-			        <input type='checkbox' id='drop-remove' />
-			        <label for='drop-remove'>拖拽完删除</label>
-			      </p>-->
-			    </div>
-			
-			    <div id='calendar'></div>
-			
-			  </div>
+			<div id="calendar" class="calendar"></div>
+			<a id="addCourse" href="javascript:;" class="btn btn-ys">添加课程</a>
+			<table class="table course-table">
+				<thead>
+					<tr>
+						<th>序号</th>
+						<th>起始时间</th>
+						<th>课程内容</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>08:00--09:30</td>
+						<td>唱歌</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>10:00--10:30</td>
+						<td>穿衣服</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>11:00--11:30</td>
+						<td>游戏</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>11:30--12:00</td>
+						<td>跳舞</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</body>
 </html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>食谱管理</title>
+		
+		<!-- Bootstrap Core CSS -->
+	    <link href="../../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<script src="../../plugins/jquery/jquery-1.11.1.min.js"></script>
+		<script src="../../plugins/bootstrap/js/bootstrap.min.js"></script>
+		
+	    <!-- 图标样式 -->
+		<link href="../../plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    
+	   
+		
+		<script src='../../plugins/fullcalendar/jquery.min.js'></script>
+		<script src='../../plugins/fullcalendar/jquery-ui.min.js'></script>
+	    
+	    
+	    
+	    <!-- Custom CSS -->
+	    <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+	    <link rel="stylesheet" type="text/css" href="../../css/pages/school/cookbook.css"/>
+		<script src="../../js/common.js"></script>
+		
+		<!-- mock.js模拟后台请求数据 -->
+		<script src="../../demo/mock.js"></script>
+		<script src="../../js/school/cookbook.js"></script>
+	    
+		<!-- HTML5 Shim 和 Respond.js 让IE8 支持  HTML5 元素和媒体查询media queries -->
+	    <!--[if lt IE 9]>
+	        <script src="../../plugins/html5shiv.js"></script>
+	        <script src="../../plugins/respond.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<div class="website">
+			<a href="../home.html"><img src="../../images/icon_home.png" /></a>
+			<a href="school.html">校园</a> &gt;
+			<a href="cookbook.html">食谱管理</a>
+		</div>
+		<div class="container-fluid">
+			<div class="cookbook-container">
+				<div class="food-list">
+					<h4>食材列表</h4>
+					<div class='food-list-items'>牛奶</div>
+					<div class='food-list-items'>鸡蛋</div>
+					<div class='food-list-items'>益力多</div>
+					<div class='food-list-items'>面包</div>
+					<div class='food-list-items'>水果拼盘</div>
+					<div class='food-list-items'>番茄炒蛋</div>
+					<div class='food-list-items'>红烧排骨</div>
+					<div class='food-list-items'>香菇滑鸡</div>
+					<div class='food-list-items'>麻婆豆腐</div>
+					<div class='food-list-items'>麻婆豆腐</div>
+				</div>
+				<div class="calendar-container">
+					<div class="calendar-tool">
+						<div class="calendar-tool-left">
+							<button class="c-btn c-corner-left js_prev_week"></button>
+							<button class="c-btn c-corner-right js_next_week"></button>
+							<button class="c-btn js_this_week">本周</button>
+							<span class="tips">（提示：双击可删除对应菜谱）</span>
+						</div>
+						<div class="calendar-tool-right">
+							<button class="c-btn js_save">保存</button>
+						</div>
+					</div>
+					<div class="calendar-view"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

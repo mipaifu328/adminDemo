@@ -34,6 +34,22 @@
 .food-img{
 	width: 200px;
 }
+#uploader {
+	margin-top:-20px;
+	margin-left: 104px;
+	width:564px;
+}
+#uploader.weui-cells{
+ 	border:1px solid #ccc;
+ 	border-radius: 4px;
+ }
+.weui-uploader__input-box{
+	background-color: #dadada;
+}
+.weui-uploader__input-box:before,
+.weui-uploader__input-box:after{
+	background-color: #999;
+}
 
 @media only screen and (max-width: 768px){
 	

@@ -15,13 +15,16 @@
 	    
 		<script src="../../plugins/jquery/jquery-1.11.1.min.js"></script>
 		<script src="../../plugins/bootstrap/js/bootstrap.min.js"></script>
-    	<script src="../../plugins/My97DatePicker/WdatePicker.js"></script>
 	    
+	    <!-- weui -->
+		<link rel="stylesheet" type="text/css" href="../../plugins/weui/css/weui.css" />
+        <script src="../../plugins/weui/js/weui.min.js" ></script>
 	    
 	    
 	    <!-- Custom CSS -->
 	    <link rel="stylesheet" type="text/css" href="../../css/common.css"/>
 	    <link rel="stylesheet" type="text/css" href="../../css/form.css"/>
+	    <link rel="stylesheet" type="text/css" href="../../css/pages/school/food.css"/>
 		<script src="../../js/common.js"></script>
 	    
 	    
@@ -36,34 +39,35 @@
 			<a href="../home.html"><img src="../../images/icon_home.png" /></a>
 			<a href="school.html">校园</a> &gt;
 			<a href="food.html">食谱管理</a> &gt;
-			<a href="foodAdd.html">食谱录入</a>
+			<a href="foodAdd.html">食材录入</a>
 		</div>
 		<div class="container-fluid">
 			<form class="ys-form">
 				<div>
-					<label>用餐类型：</label>
-					<select class="form-control short">
-						<option value="0">早餐</option>
-						<option value="1">午餐</option>
-						<option value="2">下午茶</option>
-						<option value="3">晚餐</option>
-					</select>
+					<label>食材名称：</label>
+					<input type="text" class="form-control short" >
 				</div>
 				<div>
-					<label>食材：</label>
-					<button type="button" class="btn btn-ys">添加食材</button>
+					<label>食材图片：</label>
+				</div>
+				<div class="weui-cells weui-cells_form" id="uploader">
+					<div class="weui-cell">
+					    <div class="weui-cell__bd">
+					        <div class="weui-uploader">
+					            <div class="weui-uploader__bd">
+					                <ul class="weui-uploader__files" id="uploaderFiles"></ul>
+					                <div class="weui-uploader__input-box">
+					                    <!--<input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" capture="camera" multiple="" />-->
+					                    <input id="uploaderInput" class="weui-uploader__input" type="file" multiple="">
+					                </div>
+					            </div>
+					        </div>
+					    </div>
+					</div>
 				</div>
 				<div>
 					<label for="remark" class="top">备注：</label>
 					<textarea id="remark" class="form-control long" rows="3"></textarea>
-				</div>
-				<div>
-					<label for="startTime">开始时间：</label>
-					<input type="text" class="form-control short" id="startTime" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'#F{$dp.$D(\'endTime\')}'})">
-				</div>
-				<div>
-					<label for="endTime">结束时间：</label>
-					<input type="text" class="form-control short" id="endTime" onFocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss',minDate:'#F{$dp.$D(\'startTime\')}'})">
 				</div>
 				<div>
 					<a href="food.html" class="btn btn-ys">提交</a>

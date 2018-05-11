@@ -1,55 +1,44 @@
 $(function(){
 	
-	//模拟后台数据
-	Mock.mock('/host',{   
-		'list': [{
-			'id':1001,
-		    'courseTime': '08:00--09:30',
-		    'courseContent|1': ['唱歌','穿衣服','游戏' ,'跳舞'],
-		},{
-			'id':1002,
-		    'courseTime': '10:00--10:30',
-		    'courseContent|1': ['唱歌','穿衣服','游戏' ,'跳舞'],
-		},{
-			'id':1003,
-		    'courseTime': '11:00--11:30',
-		    'courseContent|1': ['唱歌','穿衣服','游戏' ,'跳舞'],
-		},{
-			'id':1004,
-		    'courseTime': '11:30--12:00',
-		    'courseContent|1': ['唱歌','穿衣服','游戏' ,'跳舞'],
-		}]
-	});
-	
-	//日历
-	laydate.render({
-	  elem: '#calendar',
-	  position: 'static',
-	  change: function(value, date){ //监听日期被切换
-	  	$.ajax({
-	  		url: '/host',
-			type:'post',
-			data:{
-				date: value
-			},
-			dataType:'json',
-			success:function(data){
-				var html = '';
-				$.each(data.list,function(idx,one){
-					html += '<tr data-id="'+ one.id +'" >' +
-								'<td>'+ (idx+1) +'</td>'+
-								'<td>'+ one.courseTime +'</td>' +
-								'<td>'+ one.courseContent +'</td>' +
-							'</tr>';
-				});
-				console.log(html);
-				$('.course-table tbody').html(html);
-			},
-			error: function(e){
-				
-			}
-	  	})
-	  }
-	});
+	/* initialize the external events
+    -----------------------------------------------------------------*/
+
+    $('#external-events .fc-event').each(function() {
+
+      // store data so the calendar knows to render an event upon drop
+      $(this).data('event', {
+        title: $.trim($(this).text()), // use the element's text as the event title
+        stick: true // maintain when user navigates (see docs on the renderEvent method)
+      });
+
+      // make the event draggable using jQuery UI
+      $(this).draggable({
+        zIndex: 999,
+        revert: true,      // will cause the event to go back to its
+        revertDuration: 0  //  original position after the drag
+      });
+
+    });
+
+
+    /* initialize the calendar
+    -----------------------------------------------------------------*/
+
+    $('#calendar').fullCalendar({
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,agendaWeek,agendaDay'
+      },
+      editable: true,
+      droppable: true, // this allows things to be dropped onto the calendar
+      drop: function() {
+        // is the "remove after drop" checkbox checked?
+        /*if ($('#drop-remove').is(':checked')) {
+          // if so, remove the element from the "Draggable Events" list
+          $(this).remove();
+        }*/
+      }
+    });
 	
 })

@@ -1,0 +1,135 @@
+html,body{
+	margin:0;
+	padding:0;
+}
+.cookbook-container{
+	position: relative;
+	padding:10px;
+	padding-left:220px;
+	moz-user-select: -moz-none; 
+	-moz-user-select: none; 
+	-o-user-select:none; 
+	-khtml-user-select:none; 
+	-webkit-user-select:none; 
+	-ms-user-select:none; 
+	user-select:none;
+}
+.food-list{
+	position: absolute;
+	top:10px;
+	left:10px;
+    width: 150px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    background: #eee;
+    text-align: left;
+}
+.food-list h4{
+    margin-top: 0px;
+    padding-top: 1em;
+    color:#21BAA8;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.food-list-items{
+	width:128px;
+	margin:10px auto;
+    padding: 2px 10px;
+    height: 24px;
+    line-height: 24px;
+    color:#fff;
+    border-radius: 4px;
+    background-color: #21BAA8;
+	cursor: move;
+}
+
+.calendar-tool{
+	overflow: hidden;
+}
+.calendar-tool-left{
+	float: left;
+}
+
+.calendar-tool-right{
+	float: right;
+}
+.c-btn{
+	position: relative;
+	float: left;
+    margin-right: 10px;
+    padding: 0px 0.6em;
+    height: 2.1em;
+    font-size: 1em;
+    white-space: nowrap;
+    cursor: pointer;
+    color:#fff;
+	border-radius: 4px;
+    border: none;
+    background-color:#21BAA8;
+    box-sizing: border-box;
+}
+.c-corner-left::after{
+	content: "‹";
+	display: inline-block;
+    height: 1em;
+    line-height: 1em;
+    font-size: 1em;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    user-select: none;
+    overflow: hidden;
+    font-size: 200%;
+}
+.c-corner-right::after{
+	content: "›";
+    display: inline-block;
+    height: 1em;
+    line-height: 1em;
+    font-size: 1em;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    user-select: none;
+    overflow: hidden;
+    font-size: 200%;
+}
+.tips{    
+	display: inline-block;
+    margin-top: 10px;
+	color:#f92121;
+}
+
+
+.calendar-view{
+	margin-top:20px;
+	overflow: auto;
+}
+.calendar-view table{
+	width: 100%;
+	min-width:900px;
+	table-layout: fixed;
+	border-collapse: collapse;
+	border: 1px solid #ddd;
+	text-align: center;
+}
+.calendar-view table th{
+	padding:10px 0;
+	text-align: center;
+	border: 1px solid #ddd;
+}
+.calendar-view table td{
+	padding: 0;
+	border: 1px solid #ddd;
+}
+.calendar-view th:first-child,
+.calendar-view td:first-child{
+	width:80px;
+}
+
+.calendar-view .food-box{
+	min-height: 104px;
+	box-sizing: border-box;
+}
+.calendar-view .food-box .food-list-items{
+	width: 76px;
+}
