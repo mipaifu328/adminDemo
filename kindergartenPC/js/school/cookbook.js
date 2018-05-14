@@ -242,9 +242,11 @@ $(function(){
      */
     
     function submitCookbook(){
+    	var listObj = {};
     	var list = [];
     	//获取菜谱json
     	$('.food-box').each(function(){
+    		var foodlist = [];
     		var $this = $(this);
     		var $foodLists = $this.find('.food-list-items');
     		if($foodLists.length > 0){
@@ -252,17 +254,28 @@ $(function(){
     			var type = $this.attr('data-type');
     			for(var i = 0, len = $foodLists.length; i < len; i++){
     				var name = $foodLists.eq(i).text();
-    				list.push({
-    					'date':date,
-    					'type':type,
+    				if(!listObj[date]){
+    					listObj[date]=[];
+    				}
+    				foodlist.push({
     					"name": name
-    				})
+    				});
     			}
+				listObj[date].push({
+					'type': type,
+					'foodlist': foodlist
+				});
     		}
     	});
-    	
+    	for(var key in listObj){
+    		list.push({
+    			'date': key,
+    			'cookbook':listObj[key]
+    		})
+    	}
     	//具体根据后台需要调整数据结构
     	alert('(具体根据后台需要调整数据结构)\n'+JSON.stringify(list));
+    	console.log(JSON.stringify(list));
     	
     	$.ajax({
     		url: '/getCookbook',
