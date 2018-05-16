@@ -178,7 +178,15 @@ $(function(){
 		
 		tbodyHtml += '</tbody></table>';
     	$('.calendar-view').html(theadHtml+tbodyHtml);
+    	
+    	//标记今天背景色
+    	$('[data-date="'+ new Date().toLocaleDateString() +'"]').css('background-color','#FCF8E3');
+    	$('[data-date="'+ new Date().toLocaleDateString() +'"]').parent().css('background-color','#FCF8E3');
+    	
+    	//初始化拖拽事件
     	initDragEvent();
+    	
+    	//加载菜谱信息
     	loadCookbook();
     }
     
@@ -193,6 +201,7 @@ $(function(){
 	      connectToSortable: '.food-box',
 	      opacity: 0.7,
 	      helper: 'clone',
+	      scroll:false,
 	      cursor: 'move',
 	      revert: 'invalid',
 	      stop: function(){
